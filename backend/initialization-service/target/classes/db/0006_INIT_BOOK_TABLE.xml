@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="0006-001" author="Stefan.Mihajlovic" failOnError="true">
+        <preConditions>
+            <tableIsEmpty tableName="BOOK"/>
+        </preConditions>
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="1"/>
+            <column name="NAME" value="Signet 1984"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Science fiction"/>
+            <column name="AUTHOR" value="George Orwell"/>
+            <column name="DESCRIPTION" value="In a world where concerns about privacy, government overreach, and freedom of information are more relevant than ever, 1984 continues to frighten and astound. Published in 1949, Orwell’s masterpiece is the chilling story of a rebellious Ministry of Truth bureaucrat; through his eyes, we glimpse a terrifying, tyrannical society, where independent thought is a crime and truth is a fiction. All these decades later, 1984 still looms large in our cultural imagination, from its perch in our curriculum to its pervasive influence on our language. It’s difficult to imagine any science fiction novel with more influence."/>
+            <column name="PAGE_NUMBER" valueNumeric="245"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="35.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="2"/>
+            <column name="NAME" value="The Employees"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Science fiction"/>
+            <column name="AUTHOR" value="Olga Ravn"/>
+            <column name="DESCRIPTION" value="The Employees accomplishes more in 136 pages than some sci-fi novels do in 500. On a ship hurtling through deep space, humans and humanoids work together under a rigid corporate hierarchy. When they land on New Discovery, crew members retrieve mysterious objects that exert a strange power over man and machine alike, awakening dreams, memories, and longing. Humans mourn their lost connections on Earth, while their humanoid colleagues yearn for connections they’ve never known. Constructed as a series of witness statements from the crew, gathered after tensions with their oppressive employer boil over, The Employees is an unforgettable novel about the psychic costs of labor under capitalism. Yet it also reaches deeper to explore science fiction\'s animating questions: What makes us human? Which of us is more human, person or robot? Is a synthetic life still a life? Dreamlike and sensual, The Employees shouldn\'t be missed."/>
+            <column name="PAGE_NUMBER" valueNumeric="325"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="29.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="3"/>
+            <column name="NAME" value="The Complete Robot"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Science fiction"/>
+            <column name="AUTHOR" value="Isaac Asimov"/>
+            <column name="DESCRIPTION" value="Asimov’s landmark Foundation series could easily have landed on this list—awarded the one-time Hugo Award for Best All-Time Series in 1966, it’s certainly made a mark on science fiction. But Asimov was at his best, both as a fiction writer and a conceptual thinker, when he wrote about robots, those rascally bags of bolts. The Complete Robot contains 37 of those stories, including the famous I, Robot. Here, Asimov laid down the highly influential Three Laws of Robotics, which would go on to shape both a genre and a field of study. From hostile to heroic to everything in between, the robots in these stories evolved as Asimov’s vision did. The world hasn\'t been the same since."/>
+            <column name="PAGE_NUMBER" valueNumeric="278"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="39.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="4"/>
+            <column name="NAME" value="Childhood\'s End"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Science fiction"/>
+            <column name="AUTHOR" value="Arthur C. Clarke"/>
+            <column name="DESCRIPTION" value="Sci-fi godfather Arthur C. Clarke wrote dozens of acclaimed novels, including 2001: A Space Odyssey and Rendezvous With Rama, but he considered Childhood’s End to be one of his favorite works. Who are we to disagree with him? In this formidable novel, the space race grinds to a halt when vast alien spaceships appear over Earth’s major cities. The Overlords (or, as they prefer to be known, The Guardians) have arrived on what seems like a mission of peace, determined to end war, ignorance, disease, and poverty. A new golden age begins, but utopia has a price: creativity stagnates, science loses forward momentum, and the human race, by and large, is stifled. As the Overlords’ secret motives come into view, Clarke reflects on the messy striving that makes us human. (Nominated for a Hugo Award in 1954, Childhood’s End ultimately lost to Fahrenheit 451, but the novel remains timeless.)"/>
+            <column name="PAGE_NUMBER" valueNumeric="268"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="25.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="5"/>
+            <column name="NAME" value="Red Mars"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Science fiction"/>
+            <column name="AUTHOR" value="Kim Stanley Robinson"/>
+            <column name="DESCRIPTION" value="Plenty of writers have contemplated the colonization of Mars, but few have done it with such extraordinary granularity as Robinson, who dug in with gusto through his Mars Trilogy. Arthur C. Clarke himself called Red Mars “the best novel on the colonization of Mars that’s ever been written.” The novel takes place in 2026, when colonists fleeing an overpopulated Earth touch down on the red planet. Carefully selected and trained, they set about the task of terraforming hostile, sandswept Mars, but establishing a viable settlement will demand everything they have to give. Robinson looks at planetary colonization through every conceivable lens: politics, biology, ecology, medicine, psychology, and morality, just to name a few. The result is speculative fiction that feels astoundingly real."/>
+            <column name="PAGE_NUMBER" valueNumeric="301"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="49.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="6"/>
+            <column name="NAME" value="Anchor The Stand"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Science fiction"/>
+            <column name="AUTHOR" value="Stephen King"/>
+            <column name="DESCRIPTION" value="Horror, fantasy, and science fiction converge in The Stand, a master storyteller’s doorstopper about the eternal struggle between good and evil. After a bioengineered influenza virus escapes from a government laboratory, mankind succumbs to the deadly pandemic in just weeks, leaving survivors scattered across the barren United States. Two communities coalesce around very different leaders: Mother Abagail, a benevolent holy woman seeking utopia, and Randall Flagg, the human personification of violence and chaos. As the communities fight to wipe one another out, King weaves an epic tale about theology, morality, and human nature. In the wake of our own pandemic, The Stand has only grown in resonance and prescience."/>
+            <column name="PAGE_NUMBER" valueNumeric="254"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="99.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="7"/>
+            <column name="NAME" value="The Proposal"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Romance"/>
+            <column name="AUTHOR" value="Jasmine Guillory"/>
+            <column name="DESCRIPTION" value="You really can\'t go wrong with any of Jasmine Guillory\'s fun, romantic romps, but this sporty love story is especially great. Freelance writer Nik\'s boyfriend proposes at a Dodger\'s game, and the dude can\'t even spell her name right. She says no (obviously), and the video goes viral. Handsome doctor Carlos sweeps her away from the frenzy, but he can\'t possibly be the real deal. Or can he?"/>
+            <column name="PAGE_NUMBER" valueNumeric="352"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="59.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="8"/>
+            <column name="NAME" value="The Catcher in the Rye"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Coming-of-Age Fiction"/>
+            <column name="AUTHOR" value="J.D. Salinger"/>
+            <column name="DESCRIPTION" value="A classic novel about teenage angst and rebellion."/>
+            <column name="PAGE_NUMBER" valueNumeric="224"/>
+            <column name="PUBLISH_DATE" valueDate="1951-07-16"/>
+            <column name="PRICE" valueNumeric="49.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="9"/>
+            <column name="NAME" value="National Geographic"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Science and Nature"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Explore the wonders of our planet through captivating articles and breathtaking photography."/>
+            <column name="PAGE_NUMBER" valueNumeric="120"/>
+            <column name="PUBLISH_DATE" valueDate="2023-05-01"/>
+            <column name="PRICE" valueNumeric="12.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="10"/>
+            <column name="NAME" value="To Kill a Mockingbird"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Classic Fiction"/>
+            <column name="AUTHOR" value="Harper Lee"/>
+            <column name="DESCRIPTION" value="A powerful story addressing racial injustice and the loss of innocence."/>
+            <column name="PAGE_NUMBER" valueNumeric="336"/>
+            <column name="PUBLISH_DATE" valueDate="1960-07-11"/>
+            <column name="PRICE" valueNumeric="39.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="11"/>
+            <column name="NAME" value="1984"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Dystopian Fiction"/>
+            <column name="AUTHOR" value="George Orwell"/>
+            <column name="DESCRIPTION" value="A chilling portrayal of a totalitarian society and the power of language."/>
+            <column name="PAGE_NUMBER" valueNumeric="328"/>
+            <column name="PUBLISH_DATE" valueDate="1949-06-08"/>
+            <column name="PRICE" valueNumeric="29.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="12"/>
+            <column name="NAME" value="Time"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="News"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Stay informed with the latest news, features, and insightful articles."/>
+            <column name="PAGE_NUMBER" valueNumeric="80"/>
+            <column name="PUBLISH_DATE" valueDate="2023-05-15"/>
+            <column name="PRICE" valueNumeric="9.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="13"/>
+            <column name="NAME" value="Pride and Prejudice"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Romance"/>
+            <column name="AUTHOR" value="Jane Austen"/>
+            <column name="DESCRIPTION" value="A beloved classic exploring themes of love, class, and societal expectations."/>
+            <column name="PAGE_NUMBER" valueNumeric="432"/>
+            <column name="PUBLISH_DATE" valueDate="1813-01-28"/>
+            <column name="PRICE" valueNumeric="34.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="14"/>
+            <column name="NAME" value="National Geographic Traveler"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Travel"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Discover the world\'s most fascinating destinations and travel tips."/>
+            <column name="PAGE_NUMBER" valueNumeric="98"/>
+            <column name="PUBLISH_DATE" valueDate="2023-06-01"/>
+            <column name="PRICE" valueNumeric="11.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="15"/>
+            <column name="NAME" value="The Great Gatsby"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Classic Fiction"/>
+            <column name="AUTHOR" value="F. Scott Fitzgerald"/>
+            <column name="DESCRIPTION" value="An exploration of wealth, love, and the pursuit of the American Dream."/>
+            <column name="PAGE_NUMBER" valueNumeric="180"/>
+            <column name="PUBLISH_DATE" valueDate="1925-04-10"/>
+            <column name="PRICE" valueNumeric="27.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="16"/>
+            <column name="NAME" value="Sports Illustrated"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Sports"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Get in-depth coverage of your favorite sports, athletes, and events."/>
+            <column name="PAGE_NUMBER" valueNumeric="64"/>
+            <column name="PUBLISH_DATE" valueDate="2023-05-22"/>
+            <column name="PRICE" valueNumeric="8.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="17"/>
+            <column name="NAME" value="The Lord of the Rings"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Fantasy"/>
+            <column name="AUTHOR" value="J.R.R. Tolkien"/>
+            <column name="DESCRIPTION" value="An epic tale of adventure, friendship, and the battle between good and evil."/>
+            <column name="PAGE_NUMBER" valueNumeric="1178"/>
+            <column name="PUBLISH_DATE" valueDate="1954-07-29"/>
+            <column name="PRICE" valueNumeric="59.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="18"/>
+            <column name="NAME" value="Vogue"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Fashion"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Discover the latest trends, fashion inspiration, and style advice."/>
+            <column name="PAGE_NUMBER" valueNumeric="150"/>
+            <column name="PUBLISH_DATE" valueDate="2023-05-08"/>
+            <column name="PRICE" valueNumeric="13.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="19"/>
+            <column name="NAME" value="Moby-Dick"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Adventure"/>
+            <column name="AUTHOR" value="Herman Melville"/>
+            <column name="DESCRIPTION" value="A gripping tale of obsession and revenge set against the backdrop of whaling."/>
+            <column name="PAGE_NUMBER" valueNumeric="624"/>
+            <column name="PUBLISH_DATE" valueDate="1851-10-18"/>
+            <column name="PRICE" valueNumeric="42.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="20"/>
+            <column name="NAME" value="National Geographic Kids"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Children"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Ignite your child\'s curiosity with engaging articles and stunning photography."/>
+            <column name="PAGE_NUMBER" valueNumeric="36"/>
+            <column name="PUBLISH_DATE" valueDate="2023-06-05"/>
+            <column name="PRICE" valueNumeric="4.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="21"/>
+            <column name="NAME" value="The Hobbit"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Fantasy"/>
+            <column name="AUTHOR" value="J.R.R. Tolkien"/>
+            <column name="DESCRIPTION" value="A charming adventure about a hobbit, a wizard, and a treasure-seeking quest."/>
+            <column name="PAGE_NUMBER" valueNumeric="310"/>
+            <column name="PUBLISH_DATE" valueDate="1937-09-21"/>
+            <column name="PRICE" valueNumeric="31.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="22"/>
+            <column name="NAME" value="National Geographic History"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="History"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Uncover the mysteries of the past with captivating historical articles."/>
+            <column name="PAGE_NUMBER" valueNumeric="92"/>
+            <column name="PUBLISH_DATE" valueDate="2023-06-03"/>
+            <column name="PRICE" valueNumeric="10.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="23"/>
+            <column name="NAME" value="The Odyssey"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Epic Poetry"/>
+            <column name="AUTHOR" value="Homer"/>
+            <column name="DESCRIPTION" value="An ancient Greek epic recounting the adventures of Odysseus."/>
+            <column name="PAGE_NUMBER" valueNumeric="416"/>
+            <column name="PUBLISH_DATE" valueDate="1980-01-01"/>
+            <column name="PRICE" valueNumeric="38.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="24"/>
+            <column name="NAME" value="Architectural Digest"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Architecture and Design"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Experience the world\'s most stunning homes and cutting-edge design."/>
+            <column name="PAGE_NUMBER" valueNumeric="120"/>
+            <column name="PUBLISH_DATE" valueDate="2023-06-07"/>
+            <column name="PRICE" valueNumeric="11.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="25"/>
+            <column name="NAME" value="To Kill a Mockingbird"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Classic Fiction"/>
+            <column name="AUTHOR" value="Harper Lee"/>
+            <column name="DESCRIPTION" value="A powerful story addressing racial injustice and the loss of innocence."/>
+            <column name="PAGE_NUMBER" valueNumeric="336"/>
+            <column name="PUBLISH_DATE" valueDate="1960-07-11"/>
+            <column name="PRICE" valueNumeric="39.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="26"/>
+            <column name="NAME" value="National Geographic"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Science and Nature"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Explore the wonders of our planet through captivating articles and breathtaking photography."/>
+            <column name="PAGE_NUMBER" valueNumeric="120"/>
+            <column name="PUBLISH_DATE" valueDate="2023-05-01"/>
+            <column name="PRICE" valueNumeric="12.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="27"/>
+            <column name="NAME" value="The Catcher in the Rye"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Coming-of-Age Fiction"/>
+            <column name="AUTHOR" value="J.D. Salinger"/>
+            <column name="DESCRIPTION" value="A classic novel about teenage angst and rebellion."/>
+            <column name="PAGE_NUMBER" valueNumeric="224"/>
+            <column name="PUBLISH_DATE" valueDate="1951-07-16"/>
+            <column name="PRICE" valueNumeric="49.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="28"/>
+            <column name="NAME" value="Time"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="News"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Stay informed with the latest news, features, and insightful articles."/>
+            <column name="PAGE_NUMBER" valueNumeric="80"/>
+            <column name="PUBLISH_DATE" valueDate="2023-05-15"/>
+            <column name="PRICE" valueNumeric="9.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="29"/>
+            <column name="NAME" value="Pride and Prejudice"/>
+            <column name="TYPE" value="Book"/>
+            <column name="GENRE" value="Romance"/>
+            <column name="AUTHOR" value="Jane Austen"/>
+            <column name="DESCRIPTION" value="A beloved classic exploring themes of love, class, and societal expectations."/>
+            <column name="PAGE_NUMBER" valueNumeric="432"/>
+            <column name="PUBLISH_DATE" valueDate="1813-01-28"/>
+            <column name="PRICE" valueNumeric="34.99"/>
+        </insert>
+
+        <insert tableName="BOOK">
+            <column name="ID" valueNumeric="30"/>
+            <column name="NAME" value="National Geographic Traveler"/>
+            <column name="TYPE" value="Magazine"/>
+            <column name="GENRE" value="Travel"/>
+            <column name="AUTHOR" value=""/>
+            <column name="DESCRIPTION" value="Discover the world\'s most fascinating destinations and travel tips."/>
+            <column name="PAGE_NUMBER" valueNumeric="98"/>
+            <column name="PUBLISH_DATE" valueDate="2023-06-01"/>
+            <column name="PRICE" valueNumeric="11.99"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

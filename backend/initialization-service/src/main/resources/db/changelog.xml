@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+        <include file="db/0001_BOOK_TABLE_CREATE.xml" relativeToChangelogFile="false"/>
+        <include file="db/0002_RESERVATION_TABLE_CREATE.xml" relativeToChangelogFile="false"/>
+        <include file="db/0003_USER_TABLE_CREATE.xml" relativeToChangelogFile="false"/>
+        <include file="db/0004_ADDRESS_TABLE_CREATE.xml" relativeToChangelogFile="false"/>
+        <include file="db/0005_REVIEW_TABLE_CREATE.xml" relativeToChangelogFile="false"/>
+        <include file="db/0006_INIT_BOOK_TABLE.xml" relativeToChangelogFile="false"/>
+
+</databaseChangeLog>

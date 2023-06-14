@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="0005-001" author="Stefan.Mihajlovic" failOnError="true">
+        <preConditions>
+            <not>
+                <tableExists tableName="REVIEW"/>
+            </not>
+        </preConditions>
+        <createTable tableName="REVIEW">
+            <column name="ID" type="NUMBER"/>
+            <column name="USER_ID" type="NUMBER"/>
+            <column name="BOOK_ID" type="NUMBER"/>
+            <column name="REV_MARK" type="NUMBER"/>
+            <column name="REV_TEXT" type="VARCHAR(1024)"/>
+            <column name="REV_TITLE" type="VARCHAR(1024)"/>
+            <column name="REV_DATE" type="DATE"/>
+        </createTable>
+        <addPrimaryKey tableName="REVIEW" columnNames="ID" constraintName="REV_PK"/>
+    </changeSet>
+</databaseChangeLog>

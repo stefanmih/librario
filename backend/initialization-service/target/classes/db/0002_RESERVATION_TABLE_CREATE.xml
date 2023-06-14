@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="0002-001" author="Stefan.Mihajlovic" failOnError="true">
+        <preConditions>
+            <not>
+                <tableExists tableName="RESERVATION"/>
+            </not>
+        </preConditions>
+        <createTable tableName="RESERVATION">
+            <column name="ID" type="NUMBER"/>
+            <column name="ORDER_ID" type="VARCHAR(256)"/>
+            <column name="BOOK_ID" type="NUMBER"/>
+            <column name="USER_ID" type="NUMBER"/>
+            <column name="STATUS" type="VARCHAR(256)"/>
+            <column name="INIT_DATE" type="DATE"/>
+            <column name="SELECTED_ADDRESS" type="NUMBER"/>
+        </createTable>
+        <addPrimaryKey tableName="RESERVATION" columnNames="ID" constraintName="RES_PK"/>
+    </changeSet>
+</databaseChangeLog>

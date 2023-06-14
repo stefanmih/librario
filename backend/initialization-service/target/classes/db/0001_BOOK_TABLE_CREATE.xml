@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="0001-001" author="Stefan.Mihajlovic" failOnError="true">
+        <preConditions>
+            <not>
+                <tableExists tableName="BOOK"/>
+            </not>
+        </preConditions>
+        <createTable tableName="BOOK">
+            <column name="ID" type="NUMBER"/>
+            <column name="NAME" type="VARCHAR(256)"/>
+            <column name="TYPE" type="VARCHAR(256)"/>
+            <column name="GENRE" type="VARCHAR(256)"/>
+            <column name="AUTHOR" type="VARCHAR(256)"/>
+            <column name="DESCRIPTION" type="VARCHAR(2048)"/>
+            <column name="PAGE_NUMBER" type="NUMBER"/>
+            <column name="PUBLISH_DATE" type="DATE"/>
+            <column name="PRICE" type="NUMBER"/>
+        </createTable>
+        <addPrimaryKey tableName="BOOK" columnNames="ID" constraintName="BOOK_PK"/>
+    </changeSet>
+</databaseChangeLog>
